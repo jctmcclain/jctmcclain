@@ -41,6 +41,59 @@ print "by the ", nouns[random.randint(0,len(nouns))]
 print "I feel ", adjectives[random.randint(0,len(adjectives))]
 ```
 
+### Mash Game 
+```python
+import random
+# Define the M.A.S.H parameters
+mash = ('Mansion','Apartment','Shack','Home')
+
+# Create the prompts
+mash_prompts = ('List 4 names of individuals you would like to marry.\n',
+'List the number of kids you will have (4 values).\n',
+'List 4 jobs you would like to have.\n',
+'List 4 salaries you hope to have.\n',
+'List 4 cars you hope to own.\n',
+'List 4 places you would like to live.\n')
+
+# Set the delimiter
+delimiter=','
+# Ask the questions
+print "For each prompt, list 4 items separated by a comma.\n"
+smarry = raw_input(mash_prompts[0])
+skids = raw_input(mash_prompts[1])
+sjobs = raw_input(mash_prompts[2])
+ssalaries = raw_input(mash_prompts[3])
+scars = raw_input(mash_prompts[4])
+splaces = raw_input(mash_prompts[5])
+
+# split the inputted values into an array
+lmarry = smarry.split(delimiter)
+lkids = skids.split(delimiter)
+ljob = sjobs.split(delimiter)
+lsalaries  = ssalaries.split(delimiter)
+lcars = scars.split(delimiter)
+lspaces  = splaces.split(delimiter)
+
+# ranomize values
+x = random.randint(0,3)
+m = random.randint(0,3)
+j = random.randint(0,3)
+k = random.randint(0,3)
+c = random.randint(0,3)
+s = random.randint(0,3)
+p = random.randint(0,3)
+
+# strip  --> string.strip(x)
+print "Your fortune.. "
+print "You will dwell in a " + mash[x]
+print "Marred to " + lmarry[m]
+print "with " + lkids[k] + " kids"
+print "working as a " + ljob[j]
+print "making a salary of " + lsalaries[s]
+print "driving a " + lcars[c]
+print "living in " + lspaces[p]
+```
+
 
 ### Turtles
 --------------------------------------------
