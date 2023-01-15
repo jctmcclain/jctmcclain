@@ -21,6 +21,26 @@ print "\n Have a Ducky Day .. \n"
 print " ---------------------------- "
 ```
 
+### Ada Poetry 
+```python 
+#!/usr/bin/python
+import random
+print "Hello my name is Ada"
+yourname = raw_input("What is your name")
+print "Hello ", yourname
+print "Click the z key to genearate a poem"
+print "Here is your poem ", yourname
+verbs = ["laugh","dance","burp"]
+adverbs = ["loudly","silently","endlessly"]
+nouns =  ["sea","moon","tree"]
+adjectives = ["happy","tired","hungry"]
+#https://docs.python.org/2/library/random.html
+print "I ", verbs[random.randint(0,len(verbs))]
+print adverbs[random.randint(0,len(adverbs))]
+print "by the ", nouns[random.randint(0,len(nouns))]
+print "I feel ", adjectives[random.randint(0,len(adjectives))]
+```
+
 
 ### Turtles
 --------------------------------------------
