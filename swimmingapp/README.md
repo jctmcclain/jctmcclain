@@ -2,10 +2,12 @@
 
 ## Objectives
 
+* Graphic User Interface (GUI) Application
 * Iterative Process
 * Highlight [GUIZERO widgets](https://lawsie.github.io/guizero/about/)
 * Applied use of:
    * reading text files
+   * writing text files
    * leveraging SQL and relational databases using [DuckDB](https://duckdb.org/)
 
 ## Resources
